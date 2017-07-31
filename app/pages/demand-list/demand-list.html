@@ -1,0 +1,13 @@
+<StackLayout style="width:100%; height:100%; background-color: rgba(255,255,255,0.5);" >
+    <StackLayout *ngIf="demandService.offers && demandService.offers.length == 0" style="height:100%"
+         orientation="vertical" verticalAlignment="center" horizontalAlignment="center">
+        <TextView class="body" style="background-color: transparent" [editable]=false
+            text="במסך זה תקבל בקשות שירות מגולשים שמחפשים בעלי מקצוע בדיוק כמוך"></TextView>
+        <Label class="body font-weight-bold" text="תהיה מוכן, נינג'ה!"></Label>
+    </StackLayout>
+    <ListView style="border-width:1px" #list [items]="demandService.offers" id="demands-list" height="100%" verticalAlignment="top" (itemLoading)="makeTransparent($event)">
+        <ng-template let-item="item" >
+            <demand-item [offer]="item"></demand-item>
+        </ng-template>
+    </ListView>
+</StackLayout>

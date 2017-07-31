@@ -1,0 +1,55 @@
+{
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "repository": {
+    "type": "git",
+    "url": "<fill-your-repository-here>"
+  },
+  "nativescript": {
+    "id": "il.co.zapgroup.zapninja",
+    "tns-android": {
+      "version": "3.0.0"
+    },
+    "tns-ios": {
+      "version": "3.0.1"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@angular/animations": "~4.1.2",
+    "@angular/common": "~4.1.2",
+    "@angular/compiler": "~4.1.2",
+    "@angular/core": "~4.1.2",
+    "@angular/forms": "~4.1.2",
+    "@angular/http": "~4.1.2",
+    "@angular/platform-browser": "~4.1.2",
+    "@angular/router": "~4.1.2",
+    "@zapsod/common": "^0.4.1",
+    "@zapsod/ns-pushwoosh": "0.0.1",
+    "nativescript-angular": "~3.0.0",
+    "nativescript-socketio": "^2.3.1",
+    "nativescript-cardview": "^2.0.0-rc.0",
+    "nativescript-theme-core": "^1.0.4",
+    "node-sass": "^4.5.3",
+    "querystring": "^0.2.0",
+    "reflect-metadata": "~0.1.8",
+    "rxjs": "^5.4.0",
+    "tns-core-modules": "~3.0.0",
+    "yargs": "^7.1.0",
+    "zone.js": "~0.8.10"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "~4.1.2",
+    "babel-traverse": "6.11.4",
+    "babel-types": "6.11.1",
+    "babylon": "6.8.4",
+    "lazy": "1.0.11",
+    "nativescript-dev-sass": "^1.1.1",
+    "nativescript-dev-typescript": "^0.4.4",
+    "tns-platform-declarations": "~3.0.1",
+    "typescript": "~2.3.2"
+  },
+  "name": "zap-ninja",
+  "version": "0.2.0",
+  "author": "promie"
+}

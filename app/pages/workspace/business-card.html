@@ -1,0 +1,15 @@
+<StackLayout *ngIf="appService.myBusiness" orientation="vertical">
+    <StackLayout class="name-wrapper" orientation="horizontal"  horizontalAlignment="center" horizontalAlignment="center">
+        <Label class="name-text" text="{{appService.myBusiness.name}}"></Label>
+        <Image src="res://icon" height="30"></Image> 
+    </StackLayout>
+    <GridLayout columns="2*, *" rows="auto" style="padding: 25px">
+        <StackLayout col="0" class="info" class="biz-card">
+            <Label text="{{appService.myBusiness.address}}"></Label>
+            <Label class="goldstar" text = "דירוג: ★ {{appService.myBusiness.reviewsSummary.score}}/5 "></Label>
+            <Label text="מתוך {{appService.myBusiness.reviewsSummary.numOfRaters}} ביקורות גולשים"></Label>
+        </StackLayout>
+        <Image col="1" id="profile-img" [src]="appService.myBusiness.logo"></Image>
+    </GridLayout>
+</StackLayout>
+<Label *ngIf="!appService.myBusiness" text="טוען עסק..."></Label>

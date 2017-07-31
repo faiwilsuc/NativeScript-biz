@@ -1,0 +1,37 @@
+
+<GridLayout (tap)="toggleCollapse($event)" *ngIf="demandView" rows="*, *, auto" class="item {{demandView.className}}" pageTransition="fade">
+        <GridLayout class="item-header" orientation="horizontal" columns="*,3*" col="0" colspan="2">
+            <Label text="{{demandView.title()}}" row="0" col="1" class="h2 font-weight-bold"></Label>
+            <Label text="ממתין" row="0" col="0" class="title-side"></Label>
+        </GridLayout>
+        <DockLayout class="body" row="1" col="0" colspan="2" >
+            <Label class="h2" dock="top" text="{{demandView.demand.details.title}}"></Label>
+            <Label class="font-weight-bold subtitle" *ngIf="demandView.subtitle()" dock="top" text="{{demandView.subtitle()}}"></Label>
+            <Label class="text" dock="top" verticalAlignment="middle" text="{{demandView.text()}}"></Label>
+            <StackLayout class="more" *ngIf="!isCollapsed">
+                <Label text="פרטים נוספים" class="h2 text-center"></Label>
+                <StackLayout class="detail" *ngFor="let row of demandView.demand.details.rows || []">
+                    <Label class="question" text="{{row.q}}"></Label>
+                    <Label class="answer" text="{{row.a}}"></Label>
+                </StackLayout>
+                <Label *ngIf="demandView.demand.details.remarks" 
+                    text="{{demandView.demand.details.remarks}}" class="remarks"></Label>
+            </StackLayout>
+            <!--<StackLayout style="width:100%; height:100%; background-color:transparent" orientation="horizontal" horizontalAlignment="center" verticalAlignment="center">
+                <Image src="~/images/loading.png" style="width:100px; height:100px;"></Image>
+            </StackLayout>-->
+        </DockLayout>
+
+        <StackLayout class="ctas" col ="0" row="2"  orientation="horizontal" horizontalAlignment="center">
+            <CardView shadowOffsetHeight="4" class="card-view">
+                <StackLayout class="cta-wrapper">
+                    <Label class="cta h2 cta1" text="{{demandView.cta1}}" (tap)="cta1Click()"></Label>
+                </StackLayout>
+            </CardView>
+            <CardView shadowOffsetHeight="4" *ngIf="demandView.cta2" class="card-view">
+                <StackLayout class="cta-wrapper">
+                    <Label class="cta h2 cta2" text="{{demandView.cta2}}" (tap)="demandView.cta2Click()"></Label>
+                </StackLayout>
+            </CardView>
+        </StackLayout>
+</GridLayout>

@@ -1,0 +1,62 @@
+#workspace{
+  font-size: 22;
+  background-color: rgba(255,255,255,0.9);
+  height: 100%;
+  padding-bottom: 20px;
+}
+.box{
+  margin: 10px 25px;
+  text-align: center;
+  border-width: 1px;
+  border-radius: 20px;
+  
+  padding:10px;
+}
+.box *{
+  margin: 0 auto;
+  color: rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+.biz-card{
+  padding:10px;
+  margin: 5px;
+  *{
+    text-align:right;
+    color:#000;
+  }
+}
+
+.goldstar{
+  font-size: 24;
+  color:#FFD700;
+}
+
+#profile-img{
+  margin: 5px;
+  vertical-align: center;  
+}
+
+.info{
+  margin-right:5px;
+  text-align: right;
+}
+
+.name-wrapper{
+  background-color: rgba(0,0,0,0.7);
+  width:100%;
+  padding:5
+}
+
+.name-text{
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold
+}
+
+.btn{
+  border-radius: 25px;
+  color:#fff;
+  text-align: center
+}

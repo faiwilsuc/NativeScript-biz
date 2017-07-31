@@ -1,0 +1,31 @@
+
+<StackLayout class="main page">
+    <StackLayout orientation="horizontal" dock="top" class="action-bar">
+            <Image class="full-ninja" src="res://logo"></Image>  
+            <StackLayout orientation="horizontal" class="action-bar-title">
+                <Label class="logo action-label">
+                    <FormattedString>
+                    <Span class="zap" text="zap " ></Span>
+                    <Span text="NINJA"></Span>
+                </FormattedString></Label>
+            </StackLayout>
+    </StackLayout>
+    <GridLayout columns="*,*,*" class='tab-bar'>
+        <StackLayout class="tab-item" [class.active]="selIndex==0" col="0" orientation="vertical" horizontalAlignment="center"  verticalAlignment="center" (tap)="onSelTab(0)">
+            <Image class="tab-img"  src="res://profile"></Image>  
+            <Label text="העסק שלי"></Label>
+        </StackLayout>
+        <StackLayout class="tab-item" [class.active]="selIndex==1" col="1" orientation="vertical" horizontalAlignment="center"  verticalAlignment="center" (tap)="onSelTab(1)">
+            <Image class="tab-img" src="res://icon"></Image>  
+            <Label text="בקשות שירות"></Label>
+        </StackLayout>
+        <StackLayout class="tab-item" [class.active]="selIndex==2" col="2" orientation="vertical" horizontalAlignment="center"  verticalAlignment="center" (tap)="onSelTab(2)">
+            <Image class="tab-img" src="res://calendar"></Image>  
+            <Label text="ניהול עבודה"></Label>
+        </StackLayout>
+    </GridLayout>
+    <workspace *ngIf="selIndex==0"></workspace>
+    <demand-list height="100%" *ngIf="selIndex==1"></demand-list>
+    <work-log *ngIf="selIndex==2"></work-log>
+   
+</StackLayout>

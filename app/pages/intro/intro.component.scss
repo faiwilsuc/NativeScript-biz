@@ -1,0 +1,36 @@
+.page{
+    background-image:url('res://bg');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.body-wrapper{
+    horizontal-align:center;
+    padding:10 0;
+    *{
+        color: #fff;
+        text-align: center;
+    }
+}
+
+.wrapper{
+    padding: 30 20;
+}
+
+.welcome{
+    font-size: 40px;
+}
+
+.lbl{
+    font-size: 30px;
+    padding: 10 0;
+
+}
+
+.btn{
+    border-radius: 50px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: normal;
+    padding: 15;
+}

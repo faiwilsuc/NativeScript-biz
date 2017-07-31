@@ -1,0 +1,32 @@
+.action-bar{
+    height: 10%;
+    width: 100%;
+    horizontal-align:center;
+    background-color: #FFCC00;
+    padding:15px;
+}
+
+.action-bar-title{
+    horizontal-align:center;
+    text-align: center;
+    height: 100%;
+   
+    .action-image{
+        margin-right: 5px;
+    }
+     *{
+         color: black;
+         margin: 0 3px;
+        vertical-align: middle;
+    }
+}
+.action-bar{
+    .zap{
+        font-family:OpenSans-Bold;
+        font-size: 25;
+    }
+    .ninja{
+        font-family:OpenSans;
+        font-size: 25;
+    }
+}

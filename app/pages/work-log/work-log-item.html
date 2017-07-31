@@ -1,0 +1,16 @@
+<StackLayout class="work-item">
+    <StackLayout orientation="horizontal" class="title center-text">
+        <Label class="h2" text="{{getDateInWords()}} | {{getDate()}}"></Label>          
+    </StackLayout>
+    <StackLayout class="body">
+        <StackLayout class="header">
+            <Label class="h2" text="{{getAddress()}}"></Label>
+            <Label class="h2" text="{{getTime()}}"></Label>
+        </StackLayout>
+        <GridLayout class="actions" columns="*,*,*">
+            <Image src="~/images/Done.png" class="btn" col = "0" (tap)="sendCompleted()"></Image>
+            <Image src="~/images/Call.png" class="btn" col = "1"></Image>
+            <Image src="~/images/Navigate.png" class="btn" col = "2"></Image>
+        </GridLayout>
+    </StackLayout>
+</StackLayout>

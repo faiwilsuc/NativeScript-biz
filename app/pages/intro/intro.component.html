@@ -1,0 +1,32 @@
+<StackLayout class="page">
+    <StackLayout orientation="horizontal" dock="top" class="action-bar">
+            <Image class="full-ninja" src="res://logo"></Image>  
+            <StackLayout orientation="horizontal" class="action-bar-title">
+                <Label class="logo action-label">
+                    <FormattedString>
+                    <Span class="zap" text="zap " ></Span>
+                    <Span text="NINJA"></Span>
+                </FormattedString></Label>
+            </StackLayout>
+    </StackLayout>
+    <GridLayout class="body-wrapper" rows="*, auto">
+        <StackLayout row="0" class="wrapper" orientation="vertical">
+            <StackLayout orientation="horizontal" verticalAlignment="center" horizontalAlignment="center" margin="20 0 40 0">
+                <Label class="welcome" style="font-family:OpenSans-Bold;" text="נינג'ה." ></Label>
+                <Label class="welcome" text="ברוך הבא, " style="margin-top:20px;"></Label>
+            </StackLayout>
+            <Label class="lbl" text="כבר חתמתי?"></Label>
+            <CardView col="0" shadowOffsetHeight="5" shadowColor="#000">
+                <button class="btn" style="background-color:#39B54A" text="התחברות" (tap)="goLogin()"></button>
+            </CardView>
+            <StackLayout style="background-color:#fff; height:3px; width:30%; margin:10px"></StackLayout>
+            <Label class="lbl" text="רוצה להצטרף?"></Label>
+            <CardView col="0" shadowOffsetHeight="5"  shadowColor="#000">
+                <button class="btn blue-bg"  text="שִׂיחָה"></button>
+            </CardView>
+        </StackLayout>
+        <StackLayout row="1" padding="10 0 30 0">
+            <Label style="font-size:20px; font-family:OpenSans-Bold;" text="*הכניסה לבעלי מקצוע מובחרים בלבד"></Label>
+        </StackLayout>
+    </GridLayout>
+</StackLayout>

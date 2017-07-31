@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">זאפ נינג'ה</string>
+    <string name="title_activity_kimera">זאפ נינג'ה</string>
+    <!--Welcome-->
+    <string name="welcome_header_row1">בעל-מקצוע יקר, זו עברית</string>
+    <string name="welcome_header_row2">ברוך הבא לאפליקצית</string>
+    <string name="welcome_body_next">תתחיל לעבוד</string>
+    <string name="welcome_body_tagline">*הכניסה לבעלי-מקצוע מובחרים בלבד</string>
+</resources>

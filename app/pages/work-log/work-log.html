@@ -1,0 +1,13 @@
+<StackLayout style=" background-color: rgba(255,255,255,0.5);">
+        <StackLayout *ngIf="demandService.offers && demandService.offers.length == 0" style="height:100%"
+                orientation="vertical" verticalAlignment="center" horizontalAlignment="center">
+                <TextView class="body" style="background-color: transparent" [editable]=false
+                        text="עדיין אין עבודות לביצוע. כשלקוח יבחר בך לאחר שתענה להזמנה היא תופיע כאן"></TextView>
+                <Label class="body font-weight-bold" text="תהיה מוכן, נינג'ה!"></Label>
+        </StackLayout>
+        <ListView #list [items]="demandService.approvedWorks" id="work-list" height="100%" verticalAlignment="top">
+                <ng-template let-item="item" >
+                <work-log-item [launch]="item"></work-log-item>
+                </ng-template>
+        </ListView>
+</StackLayout>

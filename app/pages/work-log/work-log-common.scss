@@ -1,0 +1,36 @@
+
+.work-item{
+    margin-top:40px;
+    background-color: #ddd
+}
+.body{
+    font-size: 25px;
+    color:#fff;
+    text-align: center;
+}
+
+.title{
+    width: 100%;
+}
+.work-item .title{
+    background-color: #393838;
+    text-align: center;
+    padding: 15px;
+    horizontal-align: center;
+}
+.work-item .title Label{
+    color:#fff;
+    font-size: 24;
+}
+.work-item .actions .btn{
+    height:150px;  
+
+}
+
+.header{
+    padding:25px 15px 10px 15px;
+    horizontal-align:center;
+    label{
+        text-align: center;
+    }
+}

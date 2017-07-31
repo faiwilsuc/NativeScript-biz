@@ -1,0 +1,20 @@
+<StackLayout class="m-x-auto">
+    <StackLayout>
+        <Label class="h2 m-t-5 text-center" text="הערכת המחיר שלנו"></Label>
+            <Label class="text-center" text="{{offer.launch.demand.details.finalPrice.low}} - {{offer.launch.demand.details.finalPrice.high}} שקלים"></Label>
+        <Label class="footnote text-center" text="מידע זה הוצג ללקוח"></Label>            
+    </StackLayout>
+    <StackLayout>
+    <StackLayout alignment="horizontal">
+        <Label class="h2 m-t-5 text-center" text="תן הצעת מחיר:"></Label>
+    </StackLayout>
+        <GridLayout columns="100px, auto" rows="auto">
+            <Label  col="1" text="החל מ" ></Label>
+            <TextField keyboardType="phone" col="0" #textMin [default]="reply.price.low" (returnPress)="lowValueChanged(sliderMin.value)" ></TextField>
+        </GridLayout>
+        <GridLayout columns="100px, auto" rows="auto">
+        <Label text ="עד" col="1"></Label>  
+            <TextField keyboardType="phone" col="0" #textMax [default]="reply.price.high" (returnPress)="highValueChanged(sliderMax.value)" ></TextField>
+        </GridLayout>
+    </StackLayout>
+</StackLayout>

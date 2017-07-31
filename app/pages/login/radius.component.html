@@ -1,0 +1,12 @@
+<GridLayout rows="7*, 3*" class="page-container">
+    <MapView *ngIf="viewMap" (mapReady)="onMapReady($event)" row="0" zoom="7" latitude="32" longitude="35" >
+    							<!--mapReady="onMapReady"  
+   								markerSelect="onMarkerSelect" markerBeginDragging="onMarkerBeginDragging"
+   								markerEndDragging="onMarkerEndDragging" markerDrag="onMarkerDrag"
+   								cameraChanged="onCameraChanged" />-->
+    </MapView>
+    <StackLayout row="1">
+      <Slider #slider [value]="radius" (valueChange)="updateRadius(slider.value)"></Slider>
+      <button text="שמור רדיוס" (tap)="saveRadius()"></button>
+    </StackLayout>
+</GridLayout>

@@ -1,0 +1,41 @@
+.page{
+    background-color: #fff;
+    background-image:url('res://bg');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+TabView{
+    tab-background-color: rgba(90,90,90,0.9);
+    height: 100%;
+    tab-text-color:lightgray;
+    selected-tab-text-color:white;
+    font-size:16px;
+}
+.tab-bar {
+    background-color: rgba(90,90,90,0.5);
+    height: 230px;
+    width: 100%;
+    padding:30px;
+    color: #fff;
+    text-align: center;
+}
+
+.tab-item{
+    opacity: 0.5;
+}
+
+@keyframes animation {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+
+.tab-item.active{
+    animation-name: animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.tab-img{
+    height: 65%;
+}

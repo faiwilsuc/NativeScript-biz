@@ -1,0 +1,24 @@
+<AbsoluteLayout>
+    <DockLayout class="page">
+        <StackLayout orientation="horizontal" dock="top" class="action-bar">
+            <Image class="full-ninja" src="res://logo"></Image>  
+            <StackLayout orientation="horizontal" class="action-bar-title">
+                <Label class="logo action-label">
+                    <FormattedString>
+                    <Span class="zap" text="zap " ></Span>
+                    <Span text="NINJA"></Span>
+                </FormattedString></Label>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout dock="top"class="welcome" orientation="horizontal">
+            <Label  text="נינג'ה." ></Label>
+            <Label text="ברוך הבא,"></Label>
+        </StackLayout>
+        <Label dock="top" *ngIf="!loginFormIsLoaded" text="אנא המתינו לטעינת מסך ההרשמה"></Label>
+        <StackLayout id="webview-container" dock="top">
+            <WebView id="loginModal" src="{{SSOSrc}}"></WebView> 
+        </StackLayout>    
+        <Label text="*הכניסה לבעלי מקצוע מובחרים בלבד" class="tagline font-weight-bold" dock="bottom" >
+        </Label>
+    </DockLayout>
+</AbsoluteLayout>

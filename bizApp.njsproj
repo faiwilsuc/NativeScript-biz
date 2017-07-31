@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41556f92-0ad2-4c44-8989-394c74c97470}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartupFile>references.d.ts</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <EnableTypeScript>true</EnableTypeScript>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="app\pages\demand-list\item-common.scss" />
+    <Content Include="package.json" />
+    <Content Include="tsconfig.json" />
+    <TypeScriptCompile Include="app\view-models\demand\demand-view-waiting.ts" />
+    <TypeScriptCompile Include="references.d.ts" />
+    <Content Include="app\app.css" />
+    <Content Include="app\package.json" />
+    <TypeScriptCompile Include="app\root.component.ts" />
+    <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\app.routing.ts" />
+    <TypeScriptCompile Include="app\main.aot.ts" />
+    <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\polyfills.ts" />
+    <Compile Include="app\root.component.js" />
+    <Compile Include="app\app.module.js" />
+    <Compile Include="app\app.routing.js" />
+    <Compile Include="app\main.js" />
+    <Compile Include="app\polyfills.js" />
+    <TypeScriptCompile Include="app\services\application.service.ts" />
+    <TypeScriptCompile Include="app\services\demand-list.service.ts" />
+    <TypeScriptCompile Include="app\shared\config.ts" />
+    <TypeScriptCompile Include="app\shared\utils.service.ts" />
+    <Content Include="app\App_Resources\Android\AndroidManifest.xml" />
+    <Content Include="app\App_Resources\iOS\banner.png" />
+    <Content Include="app\App_Resources\iOS\banner@2x.png" />
+    <Content Include="app\App_Resources\iOS\bg_app.png" />
+    <Content Include="app\App_Resources\iOS\bg_app@2x.png" />
+    <Content Include="app\App_Resources\iOS\bg_intro.png" />
+    <Content Include="app\App_Resources\iOS\bg_intro@2x.png" />
+    <Content Include="app\App_Resources\iOS\calendar.png" />
+    <Content Include="app\App_Resources\iOS\calendar@2x.png" />
+    <Content Include="app\App_Resources\iOS\icon.png" />
+    <Content Include="app\App_Resources\iOS\icon@2x.png" />
+    <Content Include="app\App_Resources\iOS\profile.png" />
+    <Content Include="app\App_Resources\iOS\profile@2x.png" />
+    <Content Include="app\App_Resources\iOS\EmptyProfileSquare.jpg" />
+    <Content Include="app\App_Resources\Android\drawable-hdpi\background.png" />
+    <Content Include="app\App_Resources\Android\drawable-hdpi\banner.png" />
+    <Content Include="app\App_Resources\Android\drawable-hdpi\bg_app.png" />
+    <Content Include="app\App_Resources\Android\drawable-hdpi\bg_intro.png" />
+    <Content Include="app\App_Resources\Android\drawable-hdpi\calendar.png" />
+    <Content Include="app\App_Resources\Android\drawable-hdpi\icon.png" />
+    <Content Include="app\App_Resources\Android\drawable-hdpi\ic_stat_onesignal_default.png" />
+    <Content Include="app\App_Resources\Android\drawable-hdpi\logo.png" />
+    <Content Include="app\App_Resources\Android\drawable-hdpi\profile.png" />
+    <Content Include="app\App_Resources\Android\drawable-ldpi\background.png" />
+    <Content Include="app\App_Resources\Android\drawable-ldpi\bg_intro.png" />
+    <Content Include="app\App_Resources\Android\drawable-ldpi\icon.png" />
+    <Content Include="app\App_Resources\Android\drawable-ldpi\icon_native.png" />
+    <Content Include="app\App_Resources\Android\drawable-ldpi\logo.png" />
+    <Content Include="app\App_Resources\Android\drawable-mdpi\background.png" />
+    <Content Include="app\App_Resources\Android\drawable-mdpi\banner.png" />
+    <Content Include="app\App_Resources\Android\drawable-mdpi\bg_intro.png" />
+    <Content Include="app\App_Resources\Android\drawable-mdpi\calendar.png" />
+    <Content Include="app\App_Resources\Android\drawable-mdpi\icon.png" />
+    <Content Include="app\App_Resources\Android\drawable-mdpi\icon_native.png" />
+    <Content Include="app\App_Resources\Android\drawable-mdpi\ic_stat_onesignal_default.png" />
+    <Content Include="app\App_Resources\Android\drawable-mdpi\logo.png" />
+    <Content Include="app\App_Resources\Android\drawable-nodpi\splash_screen.xml" />
+    <Content Include="app\App_Resources\Android\drawable-xhdpi\background.png" />
+    <Content Include="app\App_Resources\Android\drawable-xhdpi\banner.png" />
+    <Content Include="app\App_Resources\Android\drawable-xhdpi\bg_app.png" />
+    <Content Include="app\App_Resources\Android\drawable-xhdpi\bg_app2.png" />
+    <Content Include="app\App_Resources\Android\drawable-xhdpi\bg_intro.png" />
+    <Content Include="app\App_Resources\Android\drawable-xhdpi\bg_intro_old.png" />
+    <Content Include="app\App_Resources\Android\drawable-xhdpi\calendar.png" />
+    <Content Include="app\App_Resources\Android\drawable-xhdpi\icon.png" />
+    <Content Include="app\App_Resources\Android\drawable-xhdpi\icon_native.png" />
+    <Content Include="app\App_Resources\Android\drawable-xhdpi\ic_stat_onesignal_default.png" />
+    <Content Include="app\App_Resources\Android\drawable-xhdpi\logo.png" />
+    <Content Include="app\App_Resources\Android\drawable-xhdpi\profile.png" />
+    <Content Include="app\App_Resources\Android\drawable-xhdpi\empty_profile.jpg" />
+    <Content Include="app\App_Resources\Android\drawable-xxhdpi\background.png" />
+    <Content Include="app\App_Resources\Android\drawable-xxhdpi\bg_intro.png" />
+    <Content Include="app\App_Resources\Android\drawable-xxhdpi\calendar.png" />
+    <Content Include="app\App_Resources\Android\drawable-xxhdpi\icon.png" />
+    <Content Include="app\App_Resources\Android\drawable-xxhdpi\icon_native.png" />
+    <Content Include="app\App_Resources\Android\drawable-xxhdpi\ic_stat_onesignal_default.png" />
+    <Content Include="app\App_Resources\Android\drawable-xxhdpi\logo.png" />
+    <Content Include="app\App_Resources\Android\drawable-xxhdpi\profile.png" />
+    <Content Include="app\App_Resources\Android\drawable-xxxhdpi\background.png" />
+    <Content Include="app\App_Resources\Android\drawable-xxxhdpi\icon.png" />
+    <Content Include="app\App_Resources\Android\drawable-xxxhdpi\ic_stat_onesignal_default.png" />
+    <Content Include="app\App_Resources\Android\drawable-xxxhdpi\logo.png" />
+    <Content Include="app\App_Resources\Android\values\colors.xml" />
+    <Content Include="app\App_Resources\Android\values\strings.xml" />
+    <Content Include="app\App_Resources\Android\values\styles.xml" />
+    <Content Include="app\App_Resources\Android\values-he\strings.xml" />
+    <Content Include="app\App_Resources\Android\values-v21\colors.xml" />
+    <Content Include="app\App_Resources\Android\values-v21\styles.xml" />
+    <Content Include="app\App_Resources\Android\drawable-hdpi\icons\calendar.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\Contents.json" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-29.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-29@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-29@3x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-40.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-40@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-40@3x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-50.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-50@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-57.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-57@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-60@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-60@3x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-72.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-72@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-76.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-76@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\icon-83.5@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchImage.launchimage\Default-568h@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchImage.launchimage\Default-667h@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchImage.launchimage\Default-736h@3x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchImage.launchimage\Default-Landscape.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchImage.launchimage\Default-Landscape@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchImage.launchimage\Default-Landscape@3x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchImage.launchimage\Default-Portrait.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchImage.launchimage\Default-Portrait@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchImage.launchimage\Default.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchImage.launchimage\Default@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchScreen.AspectFill.imageset\LaunchScreen-AspectFill.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchScreen.AspectFill.imageset\LaunchScreen-AspectFill@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchScreen.AspectFill.imageset\Contents.json" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchScreen.Center.imageset\LaunchScreen-Center.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchScreen.Center.imageset\LaunchScreen-Center@2x.png" />
+    <Content Include="app\App_Resources\iOS\Assets.xcassets\LaunchScreen.Center.imageset\Contents.json" />
+    <Content Include="app\i18n\en\strings.xml" />
+    <Content Include="app\i18n\he\strings.xml" />
+    <TypeScriptCompile Include="app\models\business\Business.ts" />
+    <TypeScriptCompile Include="app\models\category\ICategory.ts" />
+    <TypeScriptCompile Include="app\models\common\Address.ts" />
+    <TypeScriptCompile Include="app\models\common\IPerson.ts" />
+    <TypeScriptCompile Include="app\models\demand\demand.ts" />
+    <TypeScriptCompile Include="app\models\demand\status.ts" />
+    <TypeScriptCompile Include="app\models\review\Review.ts" />
+    <TypeScriptCompile Include="app\models\review\ReviewSummary.ts" />
+    <Compile Include="app\models\review\Review.js" />
+    <Compile Include="app\models\review\ReviewSummary.js" />
+    <Content Include="app\pages\demand\demand.html" />
+    <Content Include="app\pages\demand\demand-common.css" />
+    <TypeScriptCompile Include="app\pages\demand\demand.component.ts" />
+    <Compile Include="app\pages\demand\demand.component.js" />
+    <Content Include="app\pages\demand-list\demand-list.html" />
+    <Content Include="app\pages\demand-list\item.html" />
+    <Content Include="app\pages\demand-list\demand-list-common.css" />
+    <TypeScriptCompile Include="app\pages\demand-list\demand-list.component.ts" />
+    <TypeScriptCompile Include="app\pages\demand-list\item.component.ts" />
+    <Compile Include="app\pages\demand-list\demand-list.component.js" />
+    <Compile Include="app\pages\demand-list\item.component.js" />
+    <Content Include="app\pages\login\login-common.css" />
+    <Content Include="app\pages\login\welcome-common.css" />
+    <TypeScriptCompile Include="app\pages\login\login.component.ts" />
+    <TypeScriptCompile Include="app\pages\login\welcome.component.ts" />
+    <Compile Include="app\pages\login\login.component.js" />
+    <Compile Include="app\pages\login\welcome.component.js" />
+    <TypeScriptCompile Include="app\pages\main\main.component.ts" />
+    <Compile Include="app\pages\main\main.component.js" />
+    <Content Include="app\pages\workspace\workspace.css" />
+    <TypeScriptCompile Include="app\pages\workspace\businessCard.ts" />
+    <TypeScriptCompile Include="app\pages\workspace\workspace.component.ts" />
+    <TypeScriptCompile Include="app\pages\workspace\workspaceStats.ts" />
+    <Compile Include="app\pages\workspace\businessCard.js" />
+    <Compile Include="app\pages\workspace\workspace.component.js" />
+    <Compile Include="app\pages\workspace\workspaceStats.js" />
+    <Content Include="app\shared\nativescript-expandable-list-view\package.json" />
+    <Content Include="app\shared\nativescript-expandable-list-view\README.md" />
+    <TypeScriptCompile Include="app\shared\reviews\stars.component.ts" />
+    <TypeScriptCompile Include="app\view-models\demand\demand-view-new.ts" />
+    <TypeScriptCompile Include="app\view-models\demand\demand-view.ts" />
+    <Compile Include="hooks\after-prepare\nativescript-dev-android-snapshot.js" />
+    <Compile Include="hooks\after-prepare\nativescript-dev-sass.js" />
+    <Compile Include="hooks\after-prepare\nativescript-i18n.js" />
+    <Compile Include="hooks\before-livesync\nativescript-angular-sync.js" />
+    <Compile Include="hooks\before-prepare\nativescript-dev-android-snapshot.js" />
+    <Compile Include="hooks\before-prepare\nativescript-dev-sass.js" />
+    <Compile Include="hooks\before-prepare\nativescript-dev-typescript.js" />
+    <Compile Include="hooks\before-watch\nativescript-dev-typescript.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app" />
+    <Folder Include="app\App_Resources" />
+    <Folder Include="app\App_Resources\Android" />
+    <Folder Include="app\App_Resources\Android\drawable-hdpi" />
+    <Folder Include="app\App_Resources\Android\drawable-hdpi\icons" />
+    <Folder Include="app\App_Resources\Android\drawable-ldpi" />
+    <Folder Include="app\App_Resources\Android\drawable-mdpi" />
+    <Folder Include="app\App_Resources\Android\drawable-nodpi" />
+    <Folder Include="app\App_Resources\Android\drawable-xhdpi" />
+    <Folder Include="app\App_Resources\Android\drawable-xxhdpi" />
+    <Folder Include="app\App_Resources\Android\drawable-xxxhdpi" />
+    <Folder Include="app\App_Resources\Android\raw" />
+    <Folder Include="app\App_Resources\Android\values" />
+    <Folder Include="app\App_Resources\Android\values-he" />
+    <Folder Include="app\App_Resources\Android\values-v21" />
+    <Folder Include="app\App_Resources\iOS" />
+    <Folder Include="app\App_Resources\iOS\Assets.xcassets" />
+    <Folder Include="app\App_Resources\iOS\Assets.xcassets\AppIcon.appiconset" />
+    <Folder Include="app\App_Resources\iOS\Assets.xcassets\LaunchImage.launchimage" />
+    <Folder Include="app\App_Resources\iOS\Assets.xcassets\LaunchScreen.AspectFill.imageset" />
+    <Folder Include="app\App_Resources\iOS\Assets.xcassets\LaunchScreen.Center.imageset" />
+    <Folder Include="app\App_Resources\iOS\en.lproj" />
+    <Folder Include="app\App_Resources\iOS\he.lproj" />
+    <Folder Include="app\fonts" />
+    <Folder Include="app\i18n" />
+    <Folder Include="app\i18n\en" />
+    <Folder Include="app\i18n\he" />
+    <Folder Include="app\models" />
+    <Folder Include="app\models\business" />
+    <Folder Include="app\models\category" />
+    <Folder Include="app\models\common" />
+    <Folder Include="app\models\demand" />
+    <Folder Include="app\models\review" />
+    <Folder Include="app\pages" />
+    <Folder Include="app\pages\demand" />
+    <Folder Include="app\pages\demand-list" />
+    <Folder Include="app\pages\login" />
+    <Folder Include="app\pages\main" />
+    <Folder Include="app\pages\workspace" />
+    <Folder Include="app\services" />
+    <Folder Include="app\shared" />
+    <Folder Include="app\shared\nativescript-expandable-list-view" />
+    <Folder Include="app\shared\reviews" />
+    <Folder Include="app\view-models" />
+    <Folder Include="app\view-models\demand" />
+    <Folder Include="hooks" />
+    <Folder Include="hooks\after-prepare" />
+    <Folder Include="hooks\before-livesync" />
+    <Folder Include="hooks\before-prepare" />
+    <Folder Include="hooks\before-watch" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

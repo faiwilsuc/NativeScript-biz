@@ -1,0 +1,43 @@
+.page{
+    background-color: #fff;
+    background-image:url('res://bg');
+    background-repeat: no-repeat;
+    background-position: left center;
+     height: 100%;
+    width: 100%;
+    color:#000;
+}
+
+.welcome{
+    horizontal-align:center;
+
+    height:25%;
+    width: 100%;
+    color: #fff;
+    *{
+        font-size: 50;
+    }
+    
+}
+
+#webview-container{
+    height:50%;
+    width:80%;
+    border-color: #FFCC00;
+    border-width: 25px;
+    border-radius:20px;
+}
+#loginModal{
+    height: 100%;
+    width:100%;
+}
+.tagline{
+    text-align: center;
+    font-size: 22;
+    color: #fff;
+    font-weight: bold;
+}
+
+.font-weight-bold{
+        font-weight: bold;
+ }

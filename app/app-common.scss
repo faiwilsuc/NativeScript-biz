@@ -1,0 +1,74 @@
+/*
+In NativeScript, the app.css file is where you place CSS rules that
+you would like to apply to your entire application. Check out
+http://docs.nativescript.org/ui/styling for a full list of the CSS
+selectors and properties you can use to style UI components.
+/* variables */
+
+/*
+In many cases you may want to use the NativeScript core theme instead
+of writing your own CSS rules. For a full list of class names in the theme
+refer to http://docs.nativescript.org/ui/theme.
+*/
+@import '~nativescript-theme-core/scss/light';
+// Customize any of the theme’s variables here, for instance $btn-color: red;
+$yellow: #ffcc00;
+$blue: #0076A3;
+$red: #911;
+$background: $yellow;
+$primary: $white;
+$text-color: $white;
+$ab-background: #000;
+$ab-color: #fff;
+// Import the theme’s main ruleset.
+@import '~nativescript-theme-core/scss/index';
+
+// Place any CSS rules you want to apply on both iOS and Android here.
+// This is where the vast majority of your CSS code goes.
+
+
+.logo{
+    font-size:56;
+}
+
+.blue-bg {
+    background-color: $blue;
+}
+.yellow-bg {
+     background-color: $yellow;
+ }
+ .red-bg{
+     background-color: $red;
+ }
+
+
+ 
+//ActionBar{ horizontal-align:center; background: #111; color:black}
+//ActionBar Image {height:150px;}
+
+Page *{
+    font-family: "Raanan-Regular", "Open Sans Hebrew", sans-serif;
+    font-size:18px;
+    text-align: right;
+}
+.font-weight-bold{
+    //font-family: "Raanan-Bold"
+}
+.font-weight-bolder{
+    //font-family:"Raanan-Black"
+}
+
+StackLayout[orientation='horizontal'] Label{
+padding:0px 2px;
+}
+
+.btn {
+    // font-size: 22px;
+    // padding: 12px 30px;
+    // min-width:800px;
+}
+ListView{
+    background-color:rgba(0,0,0,0); // transparent
+    min-height: 30rem;
+    separator-color: rgba(0,0,0,0); // transparent;
+}
